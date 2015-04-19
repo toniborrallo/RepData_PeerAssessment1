@@ -78,7 +78,7 @@ ggplot(stepsbydate, aes(as.Date(date), steps)) +
   labs(title = "Histogram of Total number of steps taken each day", x = "Date", y = "Total number of steps")
 ```
 
-![plot of chunk unnamed-chunk-6](instrunctions_fig/unnamed-chunk-6-1.png) 
+![plot of chunk unnamed-chunk-6](instructions_fig/unnamed-chunk-6-1.png) 
 
 2. Calculate and report the **mean** and **median** total number of
    steps taken per day
@@ -114,7 +114,7 @@ ggplot(stepsbyinterval, aes(interval, steps)) +
   labs(title = "Average daily activity pattern", x = "Time of day", y = "Mean number of steps")
 ```
 
-![plot of chunk unnamed-chunk-8](instrunctions_fig/unnamed-chunk-8-1.png) 
+![plot of chunk unnamed-chunk-8](instructions_fig/unnamed-chunk-8-1.png) 
 
 2. Which 5-minute interval, on average across all the days in the
    dataset, contains the maximum number of steps?
@@ -174,7 +174,7 @@ stepsbydate <- aggregate(steps ~ date, data=activity, FUN=sum)
 barplot(stepsbydate$steps, names.arg=stepsbydate$date, xlab="date", ylab="steps")
 ```
 
-![plot of chunk unnamed-chunk-12](instrunctions_fig/unnamed-chunk-12-1.png) 
+![plot of chunk unnamed-chunk-12](instructions_fig/unnamed-chunk-12-1.png) 
 
 ```r
 mean(stepsbydate$steps)
@@ -225,6 +225,6 @@ for (type in c("Weekend", "Weekday")) {
 }
 ```
 
-![plot of chunk unnamed-chunk-14](instrunctions_fig/unnamed-chunk-14-1.png) 
+![plot of chunk unnamed-chunk-14](instructions_fig/unnamed-chunk-14-1.png) 
 
 
